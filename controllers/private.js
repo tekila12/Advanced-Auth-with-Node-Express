@@ -1,6 +1,9 @@
-exports.getPrivateRoute = (req, res, next) =>{
-    res.status(200).json({
-        sucess:true,
-        data: "You got access to this private data in this route"
-    });
-}
+  
+exports.getPrivateRoute = (req, res, next) => {
+    res
+      .status(200)
+      .json({
+        success: true,
+        data: "You got access to the private data in this route",
+      });
+  };
