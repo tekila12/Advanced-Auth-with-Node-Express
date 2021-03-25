@@ -20,8 +20,13 @@ app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
+app.get("/", (req, res) =>{
+  console.log("Yihaa")
+  res.send("hellloo")
+});
+
 const server = app.listen(PORT, () =>
-  console.log("Sever running on port: "+ PORT)
+  console.log("Sever running on port: " + PORT)
 );
 
 process.on("unhandledRejection", (err, promise) => {
