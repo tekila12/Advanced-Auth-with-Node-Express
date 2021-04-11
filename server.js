@@ -11,11 +11,10 @@ app.use(cors());
 app.use(express.json());
 
 
-// Connecting Routes
+
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/private", require("./routes/private"));
 
-// Error Handler Middleware
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
